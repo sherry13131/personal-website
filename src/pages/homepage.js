@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from "react-router-dom";
 
 import '../styles/homepage.css';
+import HomepageContent from '../js/HomepageContent';
 
 export class _HomePage extends Component {
 
@@ -13,27 +14,28 @@ export class _HomePage extends Component {
     render() {
         return (
           <div>
-            <div class="jumbotron" id="home">
-                <div id="greeting">Welcome</div>
-                <div id="greeting">My personal website</div>
+            <div className={["jumbotron", "overlay"].join(" ")} id="home-bg">
+                <HomepageContent></HomepageContent>
+                {/* <div id="greeting">Welcome</div>
+                <div id="greeting">My personal website</div> */}
             </div>
 
-            <div class="contents">
-                <div class="parallax p1" id="goabout">
+            <div className="contents">
+                <div className="parallax p1" id="goabout">
                     <div>About Myself</div>
                 </div>
-                <div class="container left">
+                <div className="container left">
                     <div id="about">
                         <p>I am a computer science student who like to learn new knowledge and explore the world.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="contents">
-                <div class="parallax p2" id="goproject">
+            <div className="contents">
+                <div className="parallax p2" id="goproject">
                     <div>Projects</div>
                 </div>
-                <div class="container right">
+                <div className="container right">
                     <div id="project">
                         <p>Here are some of my projects.</p>
                     </div>
@@ -41,22 +43,22 @@ export class _HomePage extends Component {
             </div>
 
 
-            <div class="contents">
-                <div class="parallax p3" id="golink">
+            <div className="contents">
+                <div className="parallax p3" id="golink">
                     <div>Links</div>
                 </div>
-                <div class="container left">
+                <div className="container left">
                     <div id="link">
                         <p>These are my links.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="contents">
-                <div class="parallax p4" id="gocontact">
+            <div className="contents">
+                <div className="parallax p4" id="gocontact">
                     <div>Contact methods</div>
                 </div>
-                <div class="container left">
+                <div className="container left">
                     <div id="contact">
                         <p>Email: sherry.hyma@gmail.com</p>
                         <p>Github</p>
