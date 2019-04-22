@@ -1,0 +1,98 @@
+* {
+	font-family: 'Nunito', sans-serif;
+}
+
+.jumbotron {
+	background-image: url("../media/pic_bg2.jpg");	
+    height:100vh;
+    background-size: cover;
+}
+
+.jumbotron div {
+	color: white;
+	text-align: center;
+}
+
+.jumbotron p {
+	color: white;
+	text-align: center;
+}
+
+div.box {
+	box-sizing: border-box;
+	height: 50%;
+	width: 50%;
+	background-color: #4EC5C1;
+}
+
+.container.left{
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 100%;
+
+	background: linear-gradient(to right, rgba(191, 219, 222, 1), rgba(255,0,0,0));
+	width: 100%;
+	height: 30%;
+}
+
+.container.right{
+	background: linear-gradient(to right, rgba(255,0,0,0), rgba(254, 220, 222, 1));
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+div#about, div#project, div#link, div#contact {
+	padding: 5% 8% 5% 8%;
+	height: 100vh;
+}
+
+#footer {
+	text-align: center;
+	font-size: 11px;
+	color: grey;
+	margin: 10px;
+	margin-top: 30px;
+}
+
+.parallax {
+    background-color: black;
+    background-blend-mode: luminosity;
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1%;
+}
+
+.parallax div {
+	text-align: center;
+	width: 50%;
+	padding: 10%;	
+	margin: 0 auto;
+	position: relative;
+	font-size: 20px;
+	color: white;
+}
+
+.p1 {
+    background-image: url("../media/bg1.jpg");
+}
+
+.p2 {
+    background-image: url("../media/bg2.jpg");
+}
+
+.p3 {
+    background-image: url("../media/bg3.jpg");
+}
+
+.p4 {
+    background-image: url("../media/bg3.jpg");
+}

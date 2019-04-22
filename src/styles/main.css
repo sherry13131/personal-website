@@ -1,0 +1,22 @@
+html, body{
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #3C3D3F;
+    text-align: left;
+    margin: auto;
+}
+
+footer{
+    margin-top: 20px;
+    text-align:center;
+}
+
+.button:hover {
+cursor: pointer;
+}

@@ -1,0 +1,76 @@
+.navbar {
+	margin-bottom: 0px;
+    background-color: rgba(225, 250, 255, 0.7);
+    position: sticky;
+    top:0;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    z-index: 100;
+}
+
+.header-logo {
+    width: 25%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.header-logo a {
+    padding: 4%;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.activeNav{
+    background-color: rgb(183, 234, 247) !important;
+    padding: 15px;
+}
+
+.navbar li a:not(.active):hover {
+    background-color: rgb(168, 214, 226);
+}
+
+.header-logo a:hover {
+    color: rgba(95, 94, 94, 0.76)
+}
+
+/* .navbar-default {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color: rgba(225, 250, 255, 0.7);
+}
+
+.navbar-menu li a {
+	color: white;
+}
+
+.navbar-header {
+	padding-right: 1%;
+}
+
+#logo {
+	font-weight: bold;
+	font-size: 25px;
+} */
