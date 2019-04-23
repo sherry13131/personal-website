@@ -18,8 +18,8 @@ class HomepageContent extends Component {
                 </div>
                 <div className="hp-right">
                     <div className="description">A student that willing to learn and explore the world.</div>
-                    <div className="description">Love to know keep up on new technologies and accept challenges.</div>
-                    <div className="description">A cat lover and like playing sports.</div>
+                    <div className="description">Love to keep up on new technologies and accept challenges.</div>
+                    <div className="description">A cat lover and sports enthusiast.</div>
                 </div>
             </div>
         );
