@@ -7,7 +7,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
-    "react-typing-animation": "^1.6.2"
+    "react-typing-animation": "git+https://github.com/sherry13131/react-typing-animation.git"
   },
   "scripts": {
     "start": "react-scripts start",
