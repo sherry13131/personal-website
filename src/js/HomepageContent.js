@@ -8,8 +8,8 @@ class HomepageContent extends Component {
     sentences = ["Welcome to my website!!! xD",
                 "Coding is funnn~",
                 "To code or not to code, this is a question.",
-                "Time management is important, since you need to sleep",
-                "Feel free to say hi to Me xD"
+                "Time management is important, to get work done, and sleep",
+                "Feel free to say hi to me xD"
                 ];
     state = {
         showThis: " ",
@@ -25,27 +25,7 @@ class HomepageContent extends Component {
     startInterval = () => {
         this.autoInterval = setTimeout(() => {
             this.randomsentence();
-            // this.typingAnimation();
-            console.log("randomed");
         }, 5000); 
-    }
-
-    typingAnimation = () => {
-        let i = 0;
-        let animation = "";
-        let speed = 100;
-        
-        this.helper(i,animation,speed);
-    }
-
-    helper = (i, animation, speed) => {
-        if (i < this.state.showThis.length) {
-            animation += this.state.showThis.charAt(i);
-            this.setState({ showThisOnScreen: animation });
-            i++;
-            
-            setTimeout(this.helper(i,animation,speed), speed);
-        }
     }
 
     componentDidMount() {
@@ -60,7 +40,6 @@ class HomepageContent extends Component {
         let { showThis } = this.state;
         return (
             <div className="hp-content-cont">
-                {/* <zz className="auto-type"> */}
                 <Typing speed={50} className="auto-type" loop={true} onFinishedTyping={this.randomsentence}>
                     <span>{ showThis }</span>
                     <Typing.Backspace count={showThis.length} delay={5000}/>
