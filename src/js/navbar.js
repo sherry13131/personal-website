@@ -17,7 +17,7 @@ class Navbar extends Component {
                         <NavLink exact to="/about" activeClassName="activeNav">About</NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/project" activeClassName="activeNav">project</NavLink>
+                        <NavLink exact to="/project" activeClassName="activeNav">Projects</NavLink>
                     </li>
                     <li>
                         <NavLink exact to="/contact" activeClassName="activeNav">Contact</NavLink>

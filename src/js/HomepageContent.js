@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from 'react';
 import '../styles/homepage.css';
 
@@ -10,9 +11,9 @@ class HomepageContent extends Component {
                     <div className="content" id="title">Student at University of Toronto Scarborough</div>
                     <div className="content" id="title">Software Developer</div>
                     <div className="social-btns-cont">
-                        <a className="social-btn" id="linkedin" href="https://www.linkedin.com/in/sherry-hyma/"></a>
-                        <a className="social-btn" id="github" href="https://github.com/sherry13131"></a>
-                        <a className="social-btn" id="mail" href="mailto:sherry.hyma@gmail.com"></a>
+                        <a className="social-btn" id="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sherry-hyma/"></a>
+                        <a className="social-btn" id="github" target="_blank" rel="noopener noreferrer" href="https://github.com/sherry13131"></a>
+                        <a className="social-btn" id="mail" target="_blank" rel="noopener noreferrer" href="mailto:sherry.hyma@gmail.com"></a>
                     </div>
                 </div>
                 <div className="hp-right">

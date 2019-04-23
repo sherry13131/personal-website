@@ -5,7 +5,7 @@
 .jumbotron {
 	background-image: url("../media/pic_bg2.jpg");	
     height:100vh;
-    background-size: cover;
+	background-size: cover;
 }
 
 .overlay {
@@ -46,6 +46,7 @@
 
 .hp-right {
 	padding: 2%;
+	padding-top: 10%;
 }
 
 .myName {
@@ -68,6 +69,10 @@
 	background-position: 2px 2px;
 	background-color: white;
 	margin-top: 20px;
+}
+
+.social-btn:hover {
+	background-color: rgb(187, 186, 186);
 }
 
 #linkedin {
