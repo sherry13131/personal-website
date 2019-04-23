@@ -24,24 +24,62 @@
     opacity: 1;
 }
 
-.hp-title{
-	width: 100%;
-    font-size: 4em;
-    position: absolute;
-    line-height: 60vh;
-    background: inherit;
-    -webkit-background-clip: text;
-    color: transparent;
-    font: 400 15vmin/50vh 'Bungee Inline', cursive;
-    text-align: center;
-	/* filter: invert(0.5) grayscale(0) brightness(0.95) contrast(9) drop-shadow(.05em .05em yellow); */
+.hp-content {
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-top: 50vh;
+	font-size: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+	filter: invert(0.46) grayscale(0) brightness(1) contrast(9);
 }
 
-.jumbotron div {
-	color: rgb(255, 255, 255);
-	text-align: center;
-	font-size: 3em;
+.hp-left {
+	padding: 1%;
+	padding-right: 5%;
+	border-right: 2px solid white;
+}
+
+.hp-right {
+	padding: 2%;
+}
+
+.myName {
+	font-size: 50px;
 	font-weight: 500;
+}
+
+.social-btns-cont {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.social-btn {
+	margin-left: 10px;
+	width: 17px;
+	height: 17px;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	background-color: white;
+	margin-top: 20px;
+}
+
+#linkedin {
+	background-image: url("../media/linkedin.png");
+}
+
+#github {
+	background-image: url("../media/github.png");
+}
+
+#mail {
+	background-image: url("../media/envelope.png");
 }
 
 div.box {
