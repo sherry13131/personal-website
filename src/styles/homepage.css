@@ -24,10 +24,23 @@
     opacity: 1;
 }
 
+.auto-type {
+	text-align: center;
+	padding-top: 16vh;
+	font-size: 2em;
+	color: white;
+	filter: invert(0.46) grayscale(0) brightness(1) contrast(9);
+}
+
+.efaGep {
+	color: white;
+	filter: invert(0.46) grayscale(0) brightness(1) contrast(9);
+}
+
 .hp-content {
 	margin-left: 15%;
 	margin-right: 15%;
-	padding-top: 50vh;
+	padding-top: 30vh;
 	font-size: 8px;
 	display: flex;
 	flex-direction: row;
