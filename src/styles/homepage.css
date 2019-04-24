@@ -54,7 +54,11 @@
 
 .hp-right {
 	padding: 2%;
-	padding-top: 10%;
+	padding-top: 6%;
+}
+
+.description {
+	margin-top: 10px;
 }
 
 .myName {

@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
+import Emoji from 'a11y-react-emoji'
 import '../styles/homepage.css';
 
 class HomepageContent extends Component {
     
-    sentences = ["Welcome to my website!!! xD",
-                "Coding is funnn~",
-                "To code or not to code, this is a question.",
-                "Time management is important, to get work done, and sleep",
+    sentences = ["Welcome to my website! ✨✨✨",
+                "Coding is funnn~ ❤️",
+                "To code or not to code, this is a ❔",
+                "Time management is important, to get work done, and 💤",
                 "Feel free to say hi to me xD"
                 ];
     state = {
@@ -57,9 +58,9 @@ class HomepageContent extends Component {
                         </div>
                     </div>
                     <div className="hp-right">
-                        <div className="description">A student that is willing to learn and explore the world.</div>
+                        <div className="description">A student that is willing to learn and explore the world <Emoji symbol="🌏" label="earth" /></div>
                         <div className="description">Love to keep up on new technologies and accept challenges.</div>
-                        <div className="description">A cat lover and sports enthusiast.</div>
+                        <div className="description">A cat lover <Emoji symbol="🐱" label="cat" /> and sports enthusiast.</div>
                     </div>
                 </div>
             </div>
