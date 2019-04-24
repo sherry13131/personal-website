@@ -40,7 +40,7 @@ class HomepageContent extends Component {
     render() {
         let { showThis } = this.state;
         return (
-            <div className="hp-content-cont">
+            <div className="hp-content-cont noselect">
                 <Typing speed={50} className="auto-type" loop={true} onFinishedTyping={this.randomsentence}>
                     <span>{ showThis }</span>
                     <Typing.Backspace count={showThis.length} delay={5000}/>
