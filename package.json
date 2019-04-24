@@ -8,11 +8,11 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
-    "react-typing-animation": "git+https://github.com/sherry13131/react-typing-animation.git"
+    "react-typing-animation": "github:sherry13131/react-typing-animation"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build; cd node_modules/react-typing-animation; npm build;",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
