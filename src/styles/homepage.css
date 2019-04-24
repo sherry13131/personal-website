@@ -32,11 +32,6 @@
 	filter: invert(0.46) grayscale(0) brightness(1) contrast(9);
 }
 
-.efaGep {
-	color: white;
-	filter: invert(0.46) grayscale(0) brightness(1) contrast(9);
-}
-
 .hp-content {
 	margin-left: 15%;
 	margin-right: 15%;
@@ -75,29 +70,28 @@
 
 .social-btn {
 	margin-left: 10px;
-	width: 17px;
-	height: 17px;
-	background-size: 90%;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: 2px 2px;
-	background-color: white;
 	margin-top: 20px;
 }
 
 .social-btn:hover {
-	background-color: rgb(187, 186, 186);
+	filter: brightness(1.6);
 }
 
 #linkedin {
-	background-image: url("../media/linkedin.png");
+	background-image: url("../media/icons8-linkedin-filled-500.png");
 }
 
 #github {
-	background-image: url("../media/github.png");
+	background-image: url("../media/icons8-octocat-512.png");
 }
 
 #mail {
-	background-image: url("../media/envelope.png");
+	background-image: url("../media/icons8-new-post-96.png");
 }
 
 div.box {
