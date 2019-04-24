@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "a11y-react-emoji": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
-    "react-typing-animation": "git+https://github.com/sherry13131/react-typing-animation.git"
+    "react-typing-animation": "^1.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
