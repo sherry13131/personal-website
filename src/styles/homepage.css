@@ -24,12 +24,19 @@
     opacity: 1;
 }
 
+/* 
+.BLzeK {
+	color: black;
+	filter: brightness(50);
+} */
+
 .auto-type {
 	text-align: center;
 	padding-top: 16vh;
 	font-size: 2em;
 	color: white;
 	filter: invert(0.46) grayscale(0) brightness(1) contrast(9);
+	height: 2.5em;
 }
 
 .hp-content {
