@@ -29,6 +29,7 @@ class Navbar extends Component {
                 </div>
             );
         }
+
         return (
             <div className="navbar-btn" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} >
                 <div className="header-logo">

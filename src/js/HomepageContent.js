@@ -15,12 +15,16 @@ class HomepageContent extends Component {
                 ];
     state = {
         showThis: " ",
-        showThisOnScreen: ""
+        showThisOnScreen: "",
+        clear: true
     }
+
+    autoField = React.createRef();
 
     randomsentence = () => {
         let num = Math.floor(Math.random() * 5);
         let sent = this.sentences[num];
+        console.log(sent)
         this.setState({ showThis: sent });
     }
 
@@ -36,6 +40,15 @@ class HomepageContent extends Component {
 
     componentWillUnmount() {
         clearInterval(this.autoInterval);
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        if (this.props.clear === nextState.clear && this.state.showThis === nextState.showThis) {
+            return false;
+        } else {
+            this.setState({ clear: false });
+            return true;
+        }
     }
 
     render() {
@@ -63,11 +76,6 @@ class HomepageContent extends Component {
                         <div className="description">Love to keep up on new technologies and accept challenges.</div>
                         <div className="description">A cat lover <Emoji symbol="🐱" label="cat" /> and sports enthusiast.</div>
                     </div>
-                </div>
-                <div className="page-dir">
-                <NavLink exact to="/about" >About</NavLink>
-                <NavLink exact to="/about" >About</NavLink>
-                <NavLink exact to="/about" >About</NavLink>
                 </div>
             </div>
         );
