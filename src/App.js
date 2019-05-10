@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
           <Switch>
             {
               Object.values(Routes).map((Component, key) => (

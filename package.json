@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "a11y-react-emoji": "^1.0.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-on-screen": "^2.1.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
-    "react-typing-animation": "^1.6.2"
+    "react-typing-animation": "^1.6.2",
+    "scroll-into-view": "^1.9.7"
   },
   "scripts": {
     "start": "react-scripts start",

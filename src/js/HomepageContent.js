@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from 'react';
+import { NavLink, withRouter } from "react-router-dom";
 import Typing from 'react-typing-animation';
 import Emoji from 'a11y-react-emoji'
 import '../styles/homepage.css';
@@ -63,9 +64,14 @@ class HomepageContent extends Component {
                         <div className="description">A cat lover <Emoji symbol="🐱" label="cat" /> and sports enthusiast.</div>
                     </div>
                 </div>
+                <div className="page-dir">
+                <NavLink exact to="/about" >About</NavLink>
+                <NavLink exact to="/about" >About</NavLink>
+                <NavLink exact to="/about" >About</NavLink>
+                </div>
             </div>
         );
     }
 }
 
-export default HomepageContent;
+export default HomepageContent = withRouter(HomepageContent);;

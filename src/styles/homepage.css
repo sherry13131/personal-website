@@ -1,5 +1,6 @@
 * {
-	font-family: 'Nunito', sans-serif;
+	/* font-family: 'Nunito', sans-serif; */
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .jumbotron {
@@ -37,6 +38,8 @@
 	color: white;
 	filter: invert(0.46) grayscale(0) brightness(1) contrast(9);
 	height: 2.5em;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .hp-content {
