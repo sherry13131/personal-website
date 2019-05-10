@@ -64,9 +64,9 @@ export class _HomePage extends Component {
     }
 
     items = [
-        // {
-        //     name: "home"
-        // },
+        {
+            name: "home"
+        },
         {
             name: "about"
         },
@@ -82,10 +82,6 @@ export class _HomePage extends Component {
     render() {
         return (
             <div>
-                <div className={["jumbotron", "overlay"].join(" ")} id="home-bg" ref={this.myHome}>
-                    <Navbar getAnchor={this.getNavAnchor}></Navbar>
-                    <HomepageContent clear={this.state.initClear}></HomepageContent>
-                </div>
                 <ScrollView ref={scroller => this._scroller = scroller}>
                     <div className="scroller">
                         {this.items.map(({ name }) => {

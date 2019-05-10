@@ -43,10 +43,10 @@ class Navbar extends Component {
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/project" activeClassName="activeNav">Projects</NavLink>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/contact" activeClassName="activeNav">Contact</NavLink>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
                     </li>
                 </ul>
             </div>

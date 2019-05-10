@@ -24,7 +24,6 @@ class HomepageContent extends Component {
     randomsentence = () => {
         let num = Math.floor(Math.random() * 5);
         let sent = this.sentences[num];
-        console.log(sent)
         this.setState({ showThis: sent });
     }
 

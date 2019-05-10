@@ -25,12 +25,6 @@
     opacity: 1;
 }
 
-/* 
-.BLzeK {
-	color: black;
-	filter: brightness(50);
-} */
-
 .auto-type {
 	text-align: center;
 	padding-top: 16vh;
@@ -138,51 +132,3 @@ div#about, div#project, div#link, div#contact {
 	height: 100vh;
 }
 
-#footer {
-	text-align: center;
-	font-size: 11px;
-	color: grey;
-	margin: 10px;
-	margin-top: 30px;
-}
-
-.parallax {
-    background-color: black;
-    background-blend-mode: luminosity;
-
-    /* Set a specific height */
-    min-height: 300px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1%;
-}
-
-.parallax div {
-	text-align: center;
-	width: 50%;
-	padding: 10%;	
-	margin: 0 auto;
-	position: relative;
-	font-size: 20px;
-	color: white;
-}
-
-.p1 {
-    background-image: url("../media/bg1.jpg");
-}
-
-.p2 {
-    background-image: url("../media/bg2.jpg");
-}
-
-.p3 {
-    background-image: url("../media/bg3.jpg");
-}
-
-.p4 {
-    background-image: url("../media/bg3.jpg");
-}
