@@ -46,7 +46,12 @@ export class _HomePage extends Component {
             return (
                 <div className="hp-about">
                     <div className="description">
-                        Forth year student at The University of Toronto Scarborough.
+                        <div className="icon"></div>
+                        <div className="des">
+                            <div className="des-para">A forth year student at The University of Toronto Scarborough.</div>
+                            <div className="des-para">I am a developer, and always want to build interesting apps.</div>
+                            {/* <div className="des-para">Welcome to download my resume. </div> */}
+                        </div>
                     </div>
                     <div className="my-skills">
                         <div className="skill-out">
@@ -76,6 +81,14 @@ export class _HomePage extends Component {
                                 <div className="skill">Illustrator</div>
                                 <div className="skill">Blender</div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="my-timeline">
+                        <div className="tl-left">
+                        
+                        </div>
+                        <div className="tl-right">
+                            
                         </div>
                     </div>
                 </div>

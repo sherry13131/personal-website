@@ -138,8 +138,45 @@ div#about, div#project, div#link, div#contact {
 	/* background-color: #d9eff7; */
 }
 
-.hp-project {
+.hp-about div {
+	margin-bottom: 5%;
+}
 
+.hp-about .description {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-bottom: black solid 3px;
+}
+
+.icon {
+	height: 98px;
+	width: 98px;
+	background: url("../media/girl.png");
+	margin-left: 10%;
+	margin-right: 5%;
+	align-items: center;
+}
+
+.icon:before {
+	height: 90px;
+	width: 87px;
+	content: "";
+	/* margin-left: 10%; */
+	border-radius: 50%;
+	border: #4EC5C1 solid 5px;
+	display: inline-block;
+}
+
+.des {
+	display: flex;
+	flex-direction: column;
+	min-width: 40%;
+}
+
+.des-para {
+	padding: 2%;
 }
 
 .my-skills {
@@ -176,7 +213,6 @@ div#about, div#project, div#link, div#contact {
 	border-top-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 	border-top-right-radius: 30px;
-	/* padding: 4% 8% 4% 8%; */
 	padding: 2% 4% 2% 4%;
 	text-align: center;
 }
