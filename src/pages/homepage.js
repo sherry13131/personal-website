@@ -45,7 +45,39 @@ export class _HomePage extends Component {
         } else if (name === "about") {
             return (
                 <div className="hp-about">
-                    about
+                    <div className="description">
+                        Forth year student at The University of Toronto Scarborough.
+                    </div>
+                    <div className="my-skills">
+                        <div className="skill-out">
+                            <p className="center-under">Languages</p> 
+                            <div className="skills left">
+                                <div className="skill">Java</div>
+                                <div className="skill">Python</div>
+                                <div className="skill">JavaScript</div>
+                                <div className="skill">C</div>
+                                <div className="skill">C++</div>
+                                <div className="skill">HTML &amp; CSS</div>
+                                <div className="skill">Go</div>
+                                <div className="skill">Verilog</div>
+                            </div>
+                        </div>
+                        <div className="skill-out">                        
+                            <p className="center-under">Technologies</p>
+                            <div className="skills right">
+                                <div className="skill">Android Studio</div>
+                                <div className="skill">Node.js</div>
+                                <div className="skill">React.js</div>
+                                <div className="skill">MySQL</div>
+                                <div className="skill">Meteor.js</div>
+                                <div className="skill">Cosmos-SDK</div>
+                                <div className="skill">Google Cloud Platform</div>
+                                <div className="skill">Photoshop</div>
+                                <div className="skill">Illustrator</div>
+                                <div className="skill">Blender</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             );
         } else if (name === "project") {

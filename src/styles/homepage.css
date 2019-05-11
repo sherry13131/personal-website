@@ -132,3 +132,55 @@ div#about, div#project, div#link, div#contact {
 	height: 100vh;
 }
 
+.hp-about {
+	height: 50%;
+	padding: 5% 10% 5% 10%;
+	/* background-color: #d9eff7; */
+}
+
+.hp-project {
+
+}
+
+.my-skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-left: 0;
+}
+
+.skill-out {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: -moz-available;
+	width: -webkit-fill-available;
+}
+
+.skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: inherit;
+}
+
+.center-under {
+	text-align: center;
+	font-size: 2em;
+}
+
+.skill {
+	margin: 10px;
+	border: #9d8df1 solid 3px;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	/* padding: 4% 8% 4% 8%; */
+	padding: 2% 4% 2% 4%;
+	text-align: center;
+}
+
+.right .skill {
+	border: #95f2d9 solid 3px;
+}
