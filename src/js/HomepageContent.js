@@ -11,7 +11,8 @@ class HomepageContent extends Component {
                 "Coding is funnn~ ❤️",
                 "To code or not to code, this is a ❔",
                 "Time management is important, to get work done, and 💤",
-                "Feel free to say hi to me xD"
+                "Feel free to say hi to me xD",
+                "This background picture was taken at UofT Scarborough!"
                 ];
     state = {
         showThis: " ",
@@ -22,7 +23,7 @@ class HomepageContent extends Component {
     autoField = React.createRef();
 
     randomsentence = () => {
-        let num = Math.floor(Math.random() * 5);
+        let num = Math.floor(Math.random() * this.sentences.length);
         let sent = this.sentences[num];
         this.setState({ showThis: sent });
     }

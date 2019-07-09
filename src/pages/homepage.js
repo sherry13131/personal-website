@@ -182,7 +182,7 @@ export class _HomePage extends Component {
                     </div>
                 </ScrollView>
                 <div className="footer">
-                    footer123123
+                    This website is made by Sherry Ma
                 </div>
             </div>
         );
