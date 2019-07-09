@@ -184,6 +184,7 @@ div#about, div#project, div#link, div#contact {
 	flex-direction: row;
 	justify-content: space-around;
 	padding-left: 0;
+	margin-bottom: 10%;
 }
 
 .skill-out {
@@ -208,6 +209,7 @@ div#about, div#project, div#link, div#contact {
 
 .skill {
 	margin: 10px;
+	margin-bottom: 1px;
 	border: #9d8df1 solid 3px;
 	border-bottom-left-radius: 30px;
 	border-top-left-radius: 30px;
@@ -215,8 +217,39 @@ div#about, div#project, div#link, div#contact {
 	border-top-right-radius: 30px;
 	padding: 2% 4% 2% 4%;
 	text-align: center;
+	user-select: none;
+}
+
+.skill:hover {
+	cursor: pointer;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+.a:hover {
+	background-color: rgba(157, 141, 241, 0.3);
+}
+
+.b:hover {
+	background-color: rgba(149, 242, 217, 0.3);
 }
 
 .right .skill {
 	border: #95f2d9 solid 3px;
+}
+
+/* -------Project------------------------------------------------ */
+.hp-project {
+	text-align: center;
+	border-top: black solid 3px;
+	padding: 3%;
+	margin-bottom: 3%;
+	margin: 0 5% 3% 5%;
+}
+
+.hp-project p {
+	margin-bottom: 2%;
+	font-size: 2em;
 }

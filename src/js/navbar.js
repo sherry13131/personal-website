@@ -5,7 +5,8 @@ import { NavLink, withRouter } from "react-router-dom";
 class Navbar extends Component {
 
     state = {
-        isHovered: false
+        isHovered: false,
+        bottomMenu: false
     }
 
     handleHover = () => {
@@ -18,12 +19,25 @@ class Navbar extends Component {
         this.props.getAnchor(elem);
     }
 
+    // shouldComponentUpdate(nextProp, nextState) {
+    //     if (this.props.bottomMenu === nextProp.bottomMenu && this.state.isHovered === nextState.isHovered) {
+    //         return false;
+    //     } else {
+    //         this.setState({ bottomMenu: nextProp.bottomMenu });
+    //         return true;
+    //     }
+    // }
+
+    componentWillReceiveProps() {
+        this.setState({ bottomMenu: this.props.bottomMenu });
+    }
+
     render() {
-        let { isHovered } = this.state;
+        let { isHovered, bottomMenu } = this.state;
         if (!isHovered) {
             return(
                 <div className="navbar-btn" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} >
-                    <div className="header-logo">
+                    <div className={ bottomMenu ? "header-logo bottom" : "header-logo" }>
                         <NavLink exact to="/">Menu</NavLink>
                     </div>
                 </div>
@@ -32,10 +46,10 @@ class Navbar extends Component {
 
         return (
             <div className="navbar-btn" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} >
-                <div className="header-logo">
+                <div className={ bottomMenu ? "header-logo bottom" : "header-logo" }>
                     <NavLink exact to="/">Menu</NavLink>
                 </div>
-                <ul>
+                <ul className={ bottomMenu ? "bottom-ul" : "" }>
                     <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
                     </li>

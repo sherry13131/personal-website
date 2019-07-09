@@ -44,6 +44,11 @@
     color: white;
 }
 
+.header-logo.bottom a {
+    padding: 4%;
+    color: black;
+}
+
 ul {
     list-style-type: none;
     width: 100%;
@@ -79,6 +84,10 @@ a {
     padding: 15px;
     text-align: center;
     display: block;
+}
+
+.bottom-ul li a {
+    color: black;
 }
 
 /* .navbar li a:not(.active):hover {

@@ -17,15 +17,20 @@ export class _HomePage extends Component {
         this._scroller.scrollTo(name);
     }
     
-    state = {
-        currAnchor: "home",
-        initClear: false
+    constructor(props) {
+        super(props);
+        this.myAbout = React.createRef();
+        this.myHome = React.createRef();
+        this.myProject = React.createRef();
+        this.myContact = React.createRef();
+        
+        this.state = {
+            currAnchor: "home",
+            initClear: false,
+            theposition: window.pageYOffset,
+            bottomMenu: false
+        }
     }
-
-    myAbout = React.createRef();
-    myHome = React.createRef();
-    myProject = React.createRef();
-    myContact = React.createRef();
 
     getNavAnchor = (anchor) => {
         this.setState({ currAnchor: anchor }, () => {
@@ -34,11 +39,47 @@ export class _HomePage extends Component {
         });
     }
 
+    listenToScroll = () => {
+        const winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop
+      
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight
+      
+        const scrolled = winScroll;
+      
+        this.setState({
+          theposition: scrolled,
+        }, () => {
+            console.log(this.state.theposition);
+        })
+
+        console.log(this.myHome.current);
+        if (scrolled >= window.innerHeight - 30) {
+            this.setState({
+                bottomMenu: true
+            });
+        } else {
+            this.setState({
+                bottomMenu: false
+            });
+        }
+      }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenToScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.listenToScroll)
+    }
+
     renderDiff = (name) => {
         if (name === "home") {
             return (
-                <div className={["jumbotron", "overlay"].join(" ")} id="home-bg">
-                    <Navbar getAnchor={this.getNavAnchor}></Navbar>
+                <div className={["jumbotron", "overlay"].join(" ")} id="home-bg" ref={this.myHome}>
+                    <Navbar getAnchor={this.getNavAnchor} bottomMenu={this.state.bottomMenu}></Navbar>
                     <HomepageContent clear={this.state.initClear}></HomepageContent>
                 </div>
             );
@@ -57,29 +98,29 @@ export class _HomePage extends Component {
                         <div className="skill-out">
                             <p className="center-under">Languages</p> 
                             <div className="skills left">
-                                <div className="skill">Java</div>
-                                <div className="skill">Python</div>
-                                <div className="skill">JavaScript</div>
-                                <div className="skill">C</div>
-                                <div className="skill">C++</div>
-                                <div className="skill">HTML &amp; CSS</div>
-                                <div className="skill">Go</div>
-                                <div className="skill">Verilog</div>
+                                <div className="skill a">Java</div>
+                                <div className="skill a">Python</div>
+                                <div className="skill a">JavaScript</div>
+                                <div className="skill a">C</div>
+                                <div className="skill a">C++</div>
+                                <div className="skill a">HTML &amp; CSS</div>
+                                <div className="skill a">Go</div>
+                                <div className="skill a">Verilog</div>
                             </div>
                         </div>
                         <div className="skill-out">                        
                             <p className="center-under">Technologies</p>
                             <div className="skills right">
-                                <div className="skill">Android Studio</div>
-                                <div className="skill">Node.js</div>
-                                <div className="skill">React.js</div>
-                                <div className="skill">MySQL</div>
-                                <div className="skill">Meteor.js</div>
-                                <div className="skill">Cosmos-SDK</div>
-                                <div className="skill">Google Cloud Platform</div>
-                                <div className="skill">Photoshop</div>
-                                <div className="skill">Illustrator</div>
-                                <div className="skill">Blender</div>
+                                <div className="skill b">Android Studio</div>
+                                <div className="skill b">Node.js</div>
+                                <div className="skill b">React.js</div>
+                                <div className="skill b">MySQL</div>
+                                <div className="skill b">Meteor.js</div>
+                                <div className="skill b">Cosmos-SDK</div>
+                                <div className="skill b">Google Cloud Platform</div>
+                                <div className="skill b">Photoshop</div>
+                                <div className="skill b">Illustrator</div>
+                                <div className="skill b">Blender</div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +129,7 @@ export class _HomePage extends Component {
                         
                         </div>
                         <div className="tl-right">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -96,16 +137,18 @@ export class _HomePage extends Component {
         } else if (name === "project") {
             return(
                 <div className="hp-project">
-                    project
+                    <p>Project</p><br></br>
+                    Coming soon...
+                    Check out my Github for details !
                 </div>
             );
         } else if (name === "contact") {
             return(
                 <div className="hp-contact">
-                    contact
+                    
                 </div>
             );
-        }        
+        }
     }
 
     items = [
@@ -120,7 +163,7 @@ export class _HomePage extends Component {
         },
         {
             name: "contact"
-        },
+        }
     ];
 
 
@@ -138,6 +181,9 @@ export class _HomePage extends Component {
                         })}
                     </div>
                 </ScrollView>
+                <div className="footer">
+                    footer123123
+                </div>
             </div>
         );
     }
