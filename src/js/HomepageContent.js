@@ -9,7 +9,7 @@ class HomepageContent extends Component {
     
     sentences = ["Welcome to my website! ✨✨✨",
                 "Coding is funnn~ ❤️",
-                "To code or not to code, this is a ❔",
+                "To code or not to code, that is the ❔",
                 "Time management is important, to get work done, and 💤",
                 "Feel free to say hi to me xD",
                 "This background picture was taken at UofT Scarborough!"
