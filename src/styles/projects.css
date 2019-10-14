@@ -6,6 +6,60 @@
 
 }
 
-.project-btns {
+.project-box {
+    display: flex;
+    flex-direction: row;
+}
 
+.pcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 20%;
+}
+
+.left {
+    border-right: 3px black solid;
+}
+
+.pcol div,div h2 a,p {
+    padding: 2%;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.pcol p {
+    width: 90%;
+    font-size: 14px;
+    padding: 0;
+    padding-left: 4%;
+}
+
+.project-btn {
+    color: black;
+    text-decoration: underline;
+}
+
+#catch-em-pic {
+    height: 400px;
+    width: 550px;
+    position: absolute;
+    /* display: none; */
+    z-index: 99;
+    background-image: url("../media/catchem-homepage.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#bank-pic {    
+    height: 400px;
+    width: 550px;
+    position: absolute;
+    /* display: none; */
+    z-index: 99;
+    /* background-image: url("../media/catchem-homepage.png"); */
+    background-size: 100%;
+    background-repeat: no-repeat;
 }

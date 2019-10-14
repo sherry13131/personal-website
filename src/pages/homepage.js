@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { withRouter } from "react-router-dom";
 
 import '../styles/homepage.css';
 import HomepageContent from '../js/HomepageContent';
+import Projects from '../js/Projects'
 import Navbar from '../js/navbar';
 import ScrollView, { ScrollElement } from "../js/scroller";
 
@@ -34,7 +35,6 @@ export class _HomePage extends Component {
 
     getNavAnchor = (anchor) => {
         this.setState({ currAnchor: anchor }, () => {
-            console.log(this.state.currAnchor);
             this.scrollTo(anchor);
         });
     }
@@ -51,11 +51,8 @@ export class _HomePage extends Component {
       
         this.setState({
           theposition: scrolled,
-        }, () => {
-            console.log(this.state.theposition);
         })
 
-        console.log(this.myHome.current);
         if (scrolled >= window.innerHeight - 30) {
             this.setState({
                 bottomMenu: true
@@ -137,9 +134,7 @@ export class _HomePage extends Component {
         } else if (name === "project") {
             return(
                 <div className="hp-project">
-                    <p>Project</p><br></br>
-                    Coming soon...
-                    Check out my Github for details !
+                    <Projects></Projects>
                 </div>
             );
         } else if (name === "contact") {
@@ -169,7 +164,7 @@ export class _HomePage extends Component {
 
     render() {
         return (
-            <div>
+            <Fragment>
                 <ScrollView ref={scroller => this._scroller = scroller}>
                     <div className="scroller">
                         {this.items.map(({ name }) => {
@@ -184,7 +179,7 @@ export class _HomePage extends Component {
                 <div className="footer">
                     This website is made by Sherry Ma
                 </div>
-            </div>
+            </Fragment>
         );
     }
 };
