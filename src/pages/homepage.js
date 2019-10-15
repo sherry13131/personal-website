@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import '../styles/homepage.css';
 import HomepageContent from '../js/HomepageContent';
 import Projects from '../js/Projects'
+import Contact from '../js/Contact'
 import Navbar from '../js/navbar';
 import ScrollView, { ScrollElement } from "../js/scroller";
 
@@ -140,7 +141,7 @@ export class _HomePage extends Component {
         } else if (name === "contact") {
             return(
                 <div className="hp-contact">
-                    
+                    <Contact></Contact>
                 </div>
             );
         }
