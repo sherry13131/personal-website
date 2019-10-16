@@ -36,7 +36,7 @@ class Navbar extends Component {
         let { isHovered, bottomMenu } = this.state;
         if (!isHovered) {
             return(
-                <div className="navbar-btn" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} >
+                <div className="navbar-btn" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
                     <div className={ bottomMenu ? "header-logo bottom" : "header-logo" }>
                         <NavLink exact to="/">Menu</NavLink>
                     </div>
@@ -45,7 +45,7 @@ class Navbar extends Component {
         }
 
         return (
-            <div className="navbar-btn" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} >
+            <div className="navbar-btn" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
                 <div className={ bottomMenu ? "header-logo bottom" : "header-logo" }>
                     <NavLink exact to="/">Menu</NavLink>
                 </div>

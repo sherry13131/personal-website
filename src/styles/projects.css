@@ -104,3 +104,11 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+.tippy-tooltip.tomato-theme {
+  background-color: transparent;
+  color: red;
+  
+  height: 10px;
+  width: 1%;
+}
