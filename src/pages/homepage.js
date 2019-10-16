@@ -87,7 +87,7 @@ export class _HomePage extends Component {
                     <div className="description">
                         <div className="icon"></div>
                         <div className="des">
-                            <div className="des-para">A forth year student at The University of Toronto Scarborough.</div>
+                            <div className="des-para">A fourth year student at The University of Toronto Scarborough.</div>
                             <div className="des-para">I am a developer, and always want to build interesting apps.</div>
                             {/* <div className="des-para">Welcome to download my resume. </div> */}
                         </div>
