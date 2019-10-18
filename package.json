@@ -6,6 +6,7 @@
     "a11y-react-emoji": "^1.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-device-detect": "^1.9.10",
     "react-dom": "^16.8.6",
     "react-on-screen": "^2.1.1",
     "react-particles-js": "^2.7.0",

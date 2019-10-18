@@ -3,6 +3,15 @@
     flex-direction: row;
 }
 
+.project-box-phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box-phone div p {
+    font-size: 14px;
+}
+
 .pcol {
     display: flex;
     flex-direction: column;

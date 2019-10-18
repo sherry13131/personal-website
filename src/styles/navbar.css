@@ -22,6 +22,19 @@
     width: 8%;
 }
 
+.nav-phone {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-phone li {
+    width: 25%;
+    padding: 1%;
+    justify-content: space-evenly;
+}
+
 .show {
     visibility: unset;
 }

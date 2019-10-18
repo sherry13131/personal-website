@@ -36,6 +36,11 @@
 	margin-right: 15%;
 }
 
+.auto-type-phone {
+	font-size: 1em;
+	user-select: none;
+}
+
 .hp-content {
 	margin-left: 15%;
 	margin-right: 15%;
@@ -59,6 +64,23 @@
 .hp-right {
 	padding: 2%;
 	padding-top: 6%;
+}
+
+.hp-phone {
+	flex-direction: column;
+	margin-left: 15%;
+	margin-right: 15%;
+	bottom: 0;
+	position: absolute;
+	padding-bottom: 5%;
+}
+.hp-phone-wrap .myName {
+	font-size: 38px;
+}
+
+.hp-phone-wrap div {
+	font-size: 15px;
+	padding-bottom: 7%;
 }
 
 .description {

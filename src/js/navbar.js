@@ -1,6 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import '../styles/navbar.css';
 import { NavLink, withRouter } from "react-router-dom";
+import {
+    BrowserView,
+    MobileView,
+    isBrowser,
+    isMobile
+  } from "react-device-detect";
 
 class Navbar extends Component {
 
@@ -32,7 +38,31 @@ class Navbar extends Component {
         this.setState({ bottomMenu: this.props.bottomMenu });
     }
 
+    renderPhone() {
+        return(
+            <Fragment>
+                <ul className="nav-phone">
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
+                    </li>
+                </ul>
+            </Fragment>
+        )
+    }
+
     render() {
+        if (isMobile) {
+            return this.renderPhone();
+        }
         let { isHovered, bottomMenu } = this.state;
         if (!isHovered) {
             return(
