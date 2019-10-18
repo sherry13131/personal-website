@@ -72,7 +72,7 @@
 	margin-right: 15%;
 	bottom: 0;
 	position: absolute;
-	padding-bottom: 5%;
+	padding-bottom: 8%;
 }
 .hp-phone-wrap .myName {
 	font-size: 38px;
@@ -159,6 +159,10 @@ div#about, div#project, div#link, div#contact {
 	padding: 5% 10% 5% 10%;
 }
 
+.hp-about-phone {
+	margin-top: 10%;
+}
+
 .hp-about div {
 	margin-bottom: 5%;
 }
@@ -196,6 +200,23 @@ div#about, div#project, div#link, div#contact {
 	min-width: 40%;
 }
 
+.des-phone {
+	text-align: left;
+	padding-top: 1%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.des-phone p {
+	font-size: 25px;
+	padding-bottom: 0;
+}
+
+.des-phone p.des-para {
+	font-size: 15px;
+	padding-bottom: 0;
+}
+
 .des-para {
 	padding: 2%;
 }
@@ -206,6 +227,10 @@ div#about, div#project, div#link, div#contact {
 	justify-content: space-around;
 	padding-left: 0;
 	margin-bottom: 10%;
+}
+
+.my-skills-phone {
+	flex-direction: column;
 }
 
 .skill-out {

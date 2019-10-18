@@ -22,6 +22,13 @@
     width: 8%;
 }
 
+.navbar-btn-phone {
+    left: 0;
+    right: initial;
+    flex-direction: row;
+    width: 100%;
+}
+
 .nav-phone {
     position: absolute;
     width: 100%;
@@ -101,6 +108,14 @@ a {
 
 .bottom-ul li a {
     color: black;
+}
+
+.bottom-ul-phone li a {
+    color: white;
+}
+
+.bottom-ul-phone li {
+    background-color: #353a47;
 }
 
 /* .navbar li a:not(.active):hover {

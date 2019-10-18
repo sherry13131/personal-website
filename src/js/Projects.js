@@ -17,7 +17,7 @@ class Projects extends Component {
     renderMobile() {
         return(
             <Fragment>
-                <div className="projects-top">
+                <div className={isMobile ? "projects-top projects-top-phone" : "projects-top" }>
                     <h1>Projects</h1>
                     <p>Here are some of the projects I have been working on recently.</p>
                     <p>

@@ -3,10 +3,17 @@ import { withRouter } from "react-router-dom";
 
 import '../styles/homepage.css';
 import HomepageContent from '../js/HomepageContent';
+import About from '../js/About'
 import Projects from '../js/Projects'
 import Contact from '../js/Contact'
 import Navbar from '../js/navbar';
 import ScrollView, { ScrollElement } from "../js/scroller";
+import {
+    BrowserView,
+    MobileView,
+    isBrowser,
+    isMobile
+  } from "react-device-detect";
 
 export class _HomePage extends Component {
 
@@ -83,53 +90,8 @@ export class _HomePage extends Component {
             );
         } else if (name === "about") {
             return (
-                <div className="hp-about">
-                    <div className="description">
-                        <div className="icon"></div>
-                        <div className="des">
-                            <div className="des-para">A fourth year student at The University of Toronto Scarborough.</div>
-                            <div className="des-para">I am a developer, and always want to build interesting apps.</div>
-                            {/* <div className="des-para">Welcome to download my resume. </div> */}
-                        </div>
-                    </div>
-                    <div className="my-skills">
-                        <div className="skill-out">
-                            <p className="center-under">Languages</p> 
-                            <div className="skills left">
-                                <div className="skill a">Java</div>
-                                <div className="skill a">Python</div>
-                                <div className="skill a">JavaScript</div>
-                                <div className="skill a">C</div>
-                                <div className="skill a">C++</div>
-                                <div className="skill a">HTML &amp; CSS</div>
-                                <div className="skill a">Go</div>
-                                <div className="skill a">Verilog</div>
-                            </div>
-                        </div>
-                        <div className="skill-out">                        
-                            <p className="center-under">Technologies</p>
-                            <div className="skills right">
-                                <div className="skill b">Android Studio</div>
-                                <div className="skill b">Node.js</div>
-                                <div className="skill b">React.js</div>
-                                <div className="skill b">MySQL</div>
-                                <div className="skill b">Meteor.js</div>
-                                <div className="skill b">Cosmos-SDK</div>
-                                <div className="skill b">Google Cloud Platform</div>
-                                <div className="skill b">Photoshop</div>
-                                <div className="skill b">Illustrator</div>
-                                <div className="skill b">Blender</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="my-timeline">
-                        <div className="tl-left">
-                        
-                        </div>
-                        <div className="tl-right">
-
-                        </div>
-                    </div>
+                <div className={isMobile ? "hp-about hp-about-phone" : "hp-about"}>
+                    <About></About>
                 </div>
             );
         } else if (name === "project") {

@@ -38,9 +38,9 @@ class Navbar extends Component {
         this.setState({ bottomMenu: this.props.bottomMenu });
     }
 
-    renderPhone() {
+    renderPhone = () => {
         return(
-            <Fragment>
+            // <Fragment>
                 <ul className="nav-phone">
                     <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
@@ -55,13 +55,36 @@ class Navbar extends Component {
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
                     </li>
                 </ul>
-            </Fragment>
-        )
+            // </Fragment>
+        );
     }
 
     render() {
         if (isMobile) {
-            return this.renderPhone();
+            // return this.renderPhone();
+            let { isHovered, bottomMenu } = this.state;
+
+        return (
+            <div className="navbar-btn navbar-btn-phone">
+                {/* <div className={ bottomMenu ? "header-logo bottom" : "header-logo" }>
+                    <NavLink exact to="/">Menu</NavLink>
+                </div> */}
+                <ul className={ bottomMenu ? "bottom-ul-phone nav-phone" : "nav-phone" }>
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
+                    </li>
+                </ul>
+            </div>
+        );
         }
         let { isHovered, bottomMenu } = this.state;
         if (!isHovered) {
