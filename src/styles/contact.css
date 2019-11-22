@@ -2,3 +2,28 @@
     text-align: center;
     /* border-top:  */
 }
+
+.contact-content {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.resume-div {
+    overflow: visible;
+    width: max-content;
+    font-weight: 300;
+}
+
+.contact-link {
+    color: black;
+    text-align: left;
+    font-size: 15px;
+}
+
+.custom-underline {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+}

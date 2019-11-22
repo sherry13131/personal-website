@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import * as Routes from './pages';
-import Navbar from './js/navbar';
 import './styles/main.css';
 
 class App extends Component {

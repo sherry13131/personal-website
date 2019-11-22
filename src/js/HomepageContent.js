@@ -7,8 +7,6 @@ import Particles from 'react-particles-js';
 import '../styles/homepage.css';
 import {
     BrowserView,
-    MobileView,
-    isBrowser,
     isMobile
   } from "react-device-detect";
 

@@ -1,0 +1,31 @@
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: black;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.resume-div .custom-underline::after, .ph2 .custom-underline::after {
+  top: 75%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  background-color: rgba(216, 25, 25, 0.6);
+  transition: 0.5s ease all .3s;
+}
+
+.ph2 .custom-underline::after {
+  top: 80%;
+  background-color: hsl(204, 90%, 56%);
+}
+  
+.resume-div:hover .custom-underline::after, .ph2:hover .custom-underline::after {
+  width: 100%;
+  transition: 0.3s ease all;
+}

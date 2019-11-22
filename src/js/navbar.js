@@ -1,10 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import '../styles/navbar.css';
 import { NavLink, withRouter } from "react-router-dom";
 import {
-    BrowserView,
-    MobileView,
-    isBrowser,
     isMobile
   } from "react-device-detect";
 
@@ -24,15 +21,6 @@ class Navbar extends Component {
     handleClick = (elem) => {
         this.props.getAnchor(elem);
     }
-
-    // shouldComponentUpdate(nextProp, nextState) {
-    //     if (this.props.bottomMenu === nextProp.bottomMenu && this.state.isHovered === nextState.isHovered) {
-    //         return false;
-    //     } else {
-    //         this.setState({ bottomMenu: nextProp.bottomMenu });
-    //         return true;
-    //     }
-    // }
 
     componentWillReceiveProps() {
         this.setState({ bottomMenu: this.props.bottomMenu });
@@ -62,7 +50,7 @@ class Navbar extends Component {
     render() {
         if (isMobile) {
             // return this.renderPhone();
-            let { isHovered, bottomMenu } = this.state;
+            let { bottomMenu } = this.state;
 
         return (
             <div className="navbar-btn navbar-btn-phone">

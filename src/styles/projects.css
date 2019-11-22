@@ -46,7 +46,7 @@
 
 .pcol div,div h2 a,p {
     padding: 2%;
-    width: 100%;
+    width: revert;
     text-align: left;
     font-size: 1.1em;
 }

@@ -3,15 +3,12 @@ import { withRouter } from "react-router-dom";
 
 import '../styles/homepage.css';
 import HomepageContent from '../js/HomepageContent';
-import About from '../js/About'
-import Projects from '../js/Projects'
-import Contact from '../js/Contact'
+import About from '../js/About';
+import Projects from '../js/Projects';
+import Contact from '../js/Contact';
 import Navbar from '../js/navbar';
 import ScrollView, { ScrollElement } from "../js/scroller";
 import {
-    BrowserView,
-    MobileView,
-    isBrowser,
     isMobile
   } from "react-device-detect";
 
@@ -50,10 +47,6 @@ export class _HomePage extends Component {
     listenToScroll = () => {
         const winScroll =
           document.body.scrollTop || document.documentElement.scrollTop
-      
-        const height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight
       
         const scrolled = winScroll;
       
