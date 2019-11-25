@@ -1,5 +1,5 @@
 import React, { Component,Fragment } from 'react';
-import Pdf from '../media/resume/HoiYanMa-Resume.pdf';
+import Pdf from '../media/resume/SherryMa-Resume.pdf';
 import '../styles/underline.css';
 
 class Resume extends Component {
