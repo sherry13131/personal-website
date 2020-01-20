@@ -63,6 +63,15 @@
     text-decoration: underline;
 }
 
+.tech {
+    padding-left: 2%;
+}
+
+.tech-p {
+    padding-left: 1%;
+    text-align: left;
+}
+
 #catch-em-pic {
     height: 400px;
     width: 550px;
