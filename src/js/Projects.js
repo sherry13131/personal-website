@@ -22,7 +22,7 @@ class Projects extends Component {
                     <strong id="strong-hover">Click </strong> on titles will take you to code homepage.</p>
                     <div className="project-box-phone">
                         <div>
-                            <h2><a className="project-btn" id="bank" target="_blank" rel="noopener noreferrer" href="https://github.com/sherry13131/Android-Online-Bank-System-CSCB07-">PokeBot</a></h2>
+                            <h2><a className="project-btn" id="bank">PokeBot</a></h2>
                             <h4 className="tech=p">Technologies: Node.js, MongoDB, Heroku</h4>
                             <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
                             <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
@@ -85,28 +85,8 @@ class Projects extends Component {
             arrow: true,
             placement: "right-top",
             animation: "scale-subtle",
-            // async onShow(instance) {
-            //     if (instance.state.isFetching === true || instance.state.canFetch === false) {
-            //       return
-            //     }
-            
-            //     instance.state.isFetching = true
-            //     instance.state.canFetch = false
-                
-            //     applyStyles(instance.popper, instance.popperChildren.tooltip)
-            // }
         }, [followCursor]);
-        // function applyStyles(popper, tooltip) {
-        //     // Because the tooltip has `position: absolute`,
-        //     // it no longer affects the parent popper's layout.
-        //     // We need to explicitly give it a width.
-        //     popper.style.width = '500px'
-        //     popper.style.height = '250px'
-          
-        //     // Setup transition styles on the tooltip itself
-        //     tooltip.style.transitionDuration = '0.2s'
-        //     tooltip.style.transitionProperty = 'visibility, opacity, height'
-        //   }
+        
         new Tippy('#minesweeper', {
             content: '<div id="minesweeper-pic"></div>',
             theme: 'tomato',
@@ -192,7 +172,7 @@ class Projects extends Component {
                         </div>
                         <div className="pcol pright">
                             <div>
-                                <h2 className="ph2"><a className="project-btn custom-underline" id="pokebot" rel="noopener noreferrer" href="\">PokeBot</a></h2>
+                                <h2 className="ph2"><a className="project-btn custom-underline" id="pokebot">PokeBot</a></h2>
                                 <h4 className="tech">Technologies: Node.js, MongoDB, Heroku</h4>
                                 <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
                                 <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
