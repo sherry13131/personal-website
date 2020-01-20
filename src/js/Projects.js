@@ -61,7 +61,7 @@ class Projects extends Component {
                             <h4 className="tech=p">Technologies: Android Studio, Java, MySQL</h4>
                             <p>- Online Banking Android App with various options for different type of users</p>
                             <p>- Data in database are serializable, support coherent versioning</p>
-                            <p>- Users can send/post messages to specific user/user group!!!!!!!!!!</p>
+                            <p>- Users can send/post messages to specific user/user group</p>
                         </div>
                     </div>  
                 </div>
@@ -86,7 +86,7 @@ class Projects extends Component {
             placement: "right-top",
             animation: "scale-subtle",
         }, [followCursor]);
-        
+
         new Tippy('#minesweeper', {
             content: '<div id="minesweeper-pic"></div>',
             theme: 'tomato',
