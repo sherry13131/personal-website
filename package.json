@@ -1,38 +1,25 @@
 {
   "name": "personal-website",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "a11y-react-emoji": "^1.1.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-device-detect": "^1.11.14",
-    "react-dom": "^16.12.0",
-    "react-on-screen": "^2.1.1",
-    "react-particles-js": "^2.7.0",
-    "react-pdf": "^4.1.0",
-    "react-reveal": "^1.2.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "2.1.8",
-    "react-tippy": "^1.3.1",
-    "react-transition-group": "^4.3.0",
-    "react-typing-animation": "^1.6.2",
-    "scroll-into-view": "^1.14.1",
-    "tippy.js": "^5.1.4"
-  },
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "concurrently \"cd server && nodemon server.js\" \"cd frontend && npm start\"",
+    "fullinstall": "cd frontend && npm install && cd ../server && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherry13131/personal-website.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sherry13131/personal-website/issues"
+  },
+  "homepage": "https://github.com/sherry13131/personal-website#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
 }

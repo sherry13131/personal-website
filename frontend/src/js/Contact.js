@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from "react-router-dom";
+import ContactBox from './ContactBox.js';
 import Resume from './Resume.js';
 import '../styles/contact.css'
 
@@ -16,10 +17,14 @@ class Contact extends Component {
                 <h1 className="main">
                     Contact and more information
                 </h1>
-                <div className="contact-content">
-                    <Resume></Resume>
+                <div className="contact-wrap">
+                    <div className="contact-content">
+                        <Resume></Resume>
+                    </div>
+                    <div className="contact-fillbox">
+                        <ContactBox></ContactBox>
+                    </div>
                 </div>
-                
                 
             </Fragment>
         );
