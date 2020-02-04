@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require('nodemailer');
 
@@ -56,9 +56,9 @@ router.post('/submit', function(req, res) {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors({
-    credentials: false,
-    origin: SERVER
-}));
+// app.use(cors({
+//     credentials: false,
+//     origin: SERVER
+// }));
 app.use("/api", router);
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
