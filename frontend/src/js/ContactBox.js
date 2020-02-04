@@ -55,7 +55,9 @@ class ContactBox extends Component {
                 await fetch(
                     url + "api/submit/",
                     { method: 'POST',
-                      headers: { 'Content-Type': 'application/json'},
+                      headers: {
+                          'Content-Type': 'application/json'
+                        },
                       body: JSON.stringify(this.state)
                     }
                 ).then(res => {
