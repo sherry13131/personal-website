@@ -28,10 +28,6 @@ transporter.verify((err, success) => {
     }
 });
 
-router.get('/sendform', function (req, res) {
-    res.send('hello world');
-});
-
 router.post('/submit', function(req, res) {
     console.log(req.body);
     const { name, email, message } = req.body;
