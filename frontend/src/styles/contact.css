@@ -66,3 +66,7 @@
     font-size: 15px;
     color: black;
 }
+
+.resume-desc-phone {
+    max-width: fit-content;
+}

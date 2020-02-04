@@ -1,11 +1,27 @@
 import React, { Component,Fragment } from 'react';
 import Pdf from '../media/resume/SherryMa-Resume.pdf';
 import '../styles/underline.css';
+import {
+  isMobile
+} from "react-device-detect";
 
 class Resume extends Component {
 
-  render() {
+  constructor() {
+    super();
+    this.state = {
+      isMobile: false
+    }
+  }
 
+  componentDidMount = () => {
+    if (isMobile) {
+      this.setState({ isMobile: true });
+    }
+  }
+
+  render() {
+    let { isMobile } = this.state;
     return (
       <Fragment>
         <p id="contact-line">Feel free to contact me!</p>
@@ -23,7 +39,7 @@ class Resume extends Component {
         </div>
         Email:
         <div className="resume-div">
-          <div className="resume-desc">You can leave me a message here and it will send to my email, or</div>
+          <div className={isMobile ? "resume-desc resume-desc-phone" : "resume-desc"}>You can leave me a message here and it will send to my email, or</div>
           <a className="contact-link custom-underline" href="mailto:sherry.hyma@gmail.com" target="_blank" rel="noopener noreferrer" >Click here to send me an email.</a>
         </div>
       </Fragment>
