@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 
 // const API_PORT = 3001;
 const SERVER = process.env.SERVER;
-const API_PORT = process.env.PORT;
+const API_PORT = process.env.PORT || 80;
 const app = express();
 const router = express.Router();
 const useremail = process.env.USERNAME + "@" + process.env.EMAILHOST;
