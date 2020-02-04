@@ -5,7 +5,6 @@ import Resume from './Resume.js';
 import '../styles/contact.css'
 
 import {
-    BrowserView,
     isMobile
 } from "react-device-detect";
 

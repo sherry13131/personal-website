@@ -24,3 +24,4 @@ yarn-error.log*
 
 # private config
 server/config.js
+.env

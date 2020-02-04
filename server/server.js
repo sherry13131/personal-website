@@ -1,17 +1,19 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require('nodemailer');
-const creds = require('./config');
 
 const API_PORT = 3001;
 const app = express();
 const router = express.Router();
+const useremail = process.env.USERNAME + "@" + process.env.EMAILHOST;
+const pass = process.env.PASS;
 
 var transport = {
     host: 'smtp.gmail.com',
     auth: {
-      user: creds.USER,
-      pass: creds.PASS
+      user: useremail,
+      pass: pass
     },
     secure: true,
     port: 465
