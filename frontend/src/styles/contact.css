@@ -32,11 +32,20 @@
 #contact-line {
     font-weight: 300;
     font-size: 17px;
+    padding: 0;
+    padding-top: 25px;
 }
 
 .contact-wrap {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.contact-wrap-col {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -47,5 +56,13 @@
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     height: auto;
-    margin-left: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.resume-desc {
+    padding: 15px;
+    padding-bottom: 0;
+    font-size: 15px;
+    color: black;
 }

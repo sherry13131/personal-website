@@ -23,6 +23,7 @@ class Resume extends Component {
         </div>
         Email:
         <div className="resume-div">
+          <div className="resume-desc">You can leave me a message here and it will send to my email, or</div>
           <a className="contact-link custom-underline" href="mailto:sherry.hyma@gmail.com" target="_blank" rel="noopener noreferrer" >Click here to send me an email.</a>
         </div>
       </Fragment>
