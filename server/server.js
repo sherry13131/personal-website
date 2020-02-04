@@ -1,9 +1,12 @@
 require('dotenv').config();
 const express = require("express");
+const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require('nodemailer');
 
-const API_PORT = 3001;
+// const API_PORT = 3001;
+const SERVER = process.env.SERVER;
+const API_PORT = process.env.PORT;
 const app = express();
 const router = express.Router();
 const useremail = process.env.USERNAME + "@" + process.env.EMAILHOST;
@@ -53,5 +56,9 @@ router.post('/submit', function(req, res) {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors({
+    credentials: false,
+    origin: SERVER
+}));
 app.use("/api", router);
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));

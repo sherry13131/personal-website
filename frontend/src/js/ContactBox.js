@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { Scrollbars } from 'react-custom-scrollbars';
 import "../styles/contactbox.css";
+require('dotenv').config();
+const url = process.env.REACT_APP_APIHOST;
+console.log(url);
 
 class ContactBox extends Component {
 
@@ -51,7 +53,7 @@ class ContactBox extends Component {
             // api call
             try {
                 await fetch(
-                    "http://localhost:3000/api/submit/",
+                    url + "api/submit/",
                     { method: 'POST',
                       headers: { 'Content-Type': 'application/json'},
                       body: JSON.stringify(this.state)

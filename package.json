@@ -4,8 +4,8 @@
   "description": "My Website",
   "main": "index.js",
   "scripts": {
-    "startall": "concurrently \"cd server && nodemon server.js\" \"cd frontend && npm start\"",
-    "start": "cd server && nodemon server.js",
+    "start": "concurrently \"cd server && nodemon server.js\" \"cd frontend && npm start\"",
+    "startserver": "cd server && nodemon server.js",
     "fullinstall": "cd frontend && npm install && cd ../server && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

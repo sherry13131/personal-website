@@ -22,7 +22,7 @@ class Projects extends Component {
                     <strong id="strong-hover">Click </strong> on titles will take you to code homepage.</p>
                     <div className="project-box-phone">
                         <div>
-                            <h2><a className="project-btn" id="bank">PokeBot</a></h2>
+                            <h2><div className="project-btn" id="bank">PokeBot</div></h2>
                             <h4 className="tech=p">Technologies: Node.js, MongoDB, Heroku</h4>
                             <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
                             <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
@@ -71,7 +71,6 @@ class Projects extends Component {
 
     render() {
         if (isMobile) {
-            console.log("hey")
             return this.renderMobile()
         }
         
@@ -172,7 +171,7 @@ class Projects extends Component {
                         </div>
                         <div className="pcol pright">
                             <div>
-                                <h2 className="ph2"><a className="project-btn custom-underline" id="pokebot">PokeBot</a></h2>
+                                <h2 className="ph2"><div className="project-btn custom-underline" id="pokebot">PokeBot</div></h2>
                                 <h4 className="tech">Technologies: Node.js, MongoDB, Heroku</h4>
                                 <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
                                 <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
