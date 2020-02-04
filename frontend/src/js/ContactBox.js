@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import "../styles/contactbox.css";
 require('dotenv').config();
 const url = process.env.REACT_APP_APIHOST;
-console.log(url);
 
 class ContactBox extends Component {
 

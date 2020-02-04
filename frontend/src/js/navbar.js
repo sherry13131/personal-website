@@ -22,41 +22,37 @@ class Navbar extends Component {
         this.props.getAnchor(elem);
     }
 
-    componentWillReceiveProps() {
-        this.setState({ bottomMenu: this.props.bottomMenu });
+    static getDerivedStateFromProps(nextProps, prevState) {
+        if (nextProps.bottomMenu !== prevState.bottomMenu) {
+            return ({ bottomMenu: nextProps.bottomMenu });
+        } else return null;
     }
 
     renderPhone = () => {
         return(
-            // <Fragment>
-                <ul className="nav-phone">
-                    <li>
-                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
-                    </li>
-                </ul>
-            // </Fragment>
+            <ul className="nav-phone">
+                <li>
+                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
+                </li>
+                <li>
+                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
+                </li>
+                <li>
+                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
+                </li>
+            </ul>
         );
     }
 
     render() {
         if (isMobile) {
-            // return this.renderPhone();
             let { bottomMenu } = this.state;
 
         return (
             <div className="navbar-btn navbar-btn-phone">
-                {/* <div className={ bottomMenu ? "header-logo bottom" : "header-logo" }>
-                    <NavLink exact to="/">Menu</NavLink>
-                </div> */}
                 <ul className={ bottomMenu ? "bottom-ul-phone nav-phone" : "nav-phone" }>
                     <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
