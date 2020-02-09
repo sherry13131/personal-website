@@ -27,26 +27,7 @@ class Navbar extends Component {
             return ({ bottomMenu: nextProps.bottomMenu });
         } else return null;
     }
-
-    renderPhone = () => {
-        return(
-            <ul className="nav-phone">
-                <li>
-                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("home")}>Home</NavLink>
-                </li>
-                <li>
-                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
-                </li>
-                <li>
-                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
-                </li>
-                <li>
-                    <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
-                </li>
-            </ul>
-        );
-    }
-
+    
     render() {
         if (isMobile) {
             let { bottomMenu } = this.state;

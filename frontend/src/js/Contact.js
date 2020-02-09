@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from "react-router-dom";
 import ContactBox from './ContactBox.js';
-import Resume from './Resume.js';
+import ContactList from './ContactList.js';
 import '../styles/contact.css'
 
 import {
@@ -54,7 +54,7 @@ class Contact extends Component {
                 </h1>
                 <div className={(rowFlex && !isMobile) ? "contact-wrap" : "contact-wrap-col"}>
                     <div className="contact-content">
-                        <Resume></Resume>
+                        <ContactList></ContactList>
                     </div>
                     <div className="contact-fillbox">
                         <ContactBox></ContactBox>
