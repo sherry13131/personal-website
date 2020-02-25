@@ -1,7 +1,7 @@
 import React, { useState, memo } from 'react';
 
 export const HiddenLink = memo(({ className, children, href, alt }) => {
-  const [shownHref, setHref] = useState('#');
+  const [shownHref, setHref] = useState('#meow');
   const reveal = () => setHref(href);
   return (
     <a
