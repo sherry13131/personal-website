@@ -23,7 +23,7 @@ class Projects extends Component {
                     <div className="project-box-phone">
                         <div>
                             <h2><a className="project-btn" id="bank">Pokemon Discord Bot</a></h2>
-                            <h4 className="tech=p">Technologies: Node.js, MongoDB, Heroku</h4>
+                            <h4 className="tech=p">Technologies: Discord.js </h4>
                             <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
                             <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
                             <p>- Deployed the application through Heroku for public use</p>
