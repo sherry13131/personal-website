@@ -171,8 +171,8 @@ class Projects extends Component {
                         </div>
                         <div className="pcol pright">
                             <div>
-                                <h2 className="ph2"><div className="project-btn custom-underline" id="pokebot">PokeMeow Discord Bot</div></h2>
-                                <h4 className="tech">Technologies: Node.js, MongoDB, Heroku</h4>
+                                <h2 className="ph2"><div className="project-btn custom-underline" id="pokebot">Pokemon Discord Bot</div></h2>
+                                <h4 className="tech">Technologies: Discord.js</h4>
                                 <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
                                 <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
                                 <p>- Deployed the application through Heroku for public use</p>
