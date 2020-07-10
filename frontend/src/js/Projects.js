@@ -23,10 +23,10 @@ class Projects extends Component {
                     <div className="project-box-phone">
                         <div>
                             <h2><a className="project-btn" id="bank">Pokemon Discord Bot</a></h2>
-                            <h4 className="tech=p">Technologies: Discord.js </h4>
+                            <h4 className="tech=p">Technologies: Discord.js</h4>
                             <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
-                            <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
-                            <p>- Deployed the application through Heroku for public use</p>
+                            <p>- It is growing and currently has more than 120000 users and is used in more than 45000 servers. It is one of the top 10 bot on Discord.</p>
+                            <p>- Implemented functionalities and interface design for catch, hunt, inventory, shop, and several other commands</p>
                         </div>
                         <div>
                             <h2><a id="catch-em" className="project-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/sherry13131/CatchEm">CatchEm* web app</a></h2>
@@ -174,8 +174,8 @@ class Projects extends Component {
                                 <h2 className="ph2"><div className="project-btn custom-underline" id="pokebot">Pokemon Discord Bot</div></h2>
                                 <h4 className="tech">Technologies: Discord.js</h4>
                                 <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
-                                <p>- Implemented functionalities and interface design for catch, inventory, shop, and several other commands</p>
-                                <p>- Deployed the application through Heroku for public use</p>
+                                <p>- It is growing and currently has more than 120000 users and is used in more than 45000 servers. It is one of the top 10 bot on Discord.</p>
+                                <p>- Implemented functionalities and interface design for catch, hunt, inventory, shop, and several other commands</p>
                             </div>
                             <div>
                                 <h2 className="ph2"><a className="project-btn custom-underline" id="barcode" target="_blank" rel="noopener noreferrer" href="https://github.com/sherry13131/Products-organizing-app">Product organizing App</a></h2>
