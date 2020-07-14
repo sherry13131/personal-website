@@ -211,7 +211,6 @@ class HomepageContent extends Component {
                         <div className="hp-content">
                             <div className="hp-left">
                                 <div className="myName">Sherry Ma</div>
-                                <div className="content" id="title">Student at University of Toronto Scarborough</div>
                                 <div className="content" id="title">Software Developer</div>
                                 <div className="social-btns-cont">
                                     <a className="social-btn" id="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sherry-hyma/"></a>
@@ -220,7 +219,7 @@ class HomepageContent extends Component {
                                 </div>
                             </div>
                             <div className="hp-right">
-                                <div className="description">A student that is willing to learn and explore the world <Emoji symbol="🌏" label="earth" /></div>
+                                <div className="description">Willing to learn and explore the world <Emoji symbol="🌏" label="earth" /></div>
                                 <div className="description">Love to keep up on new technologies and accept challenges.</div>
                                 <div className="description">A cat lover <Emoji symbol="🐱" label="cat" /> and sports enthusiast.</div>
                             </div>

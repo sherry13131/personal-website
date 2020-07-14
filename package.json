@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sherry13131/personal-website#readme",
   "dependencies": {
-    "concurrently": "^5.1.0",
-    "nodemon": "^2.0.2"
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
   }
 }

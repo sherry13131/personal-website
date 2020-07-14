@@ -19,14 +19,14 @@ class About extends Component {
                         {isMobile ? (
                             <div className="des des-phone">
                                 <p>I am:</p>
-                                <p className="des-para">- Studying at The University of Toronto Scarborough.</p>
-                                <p className="des-para">- A developer, and always want to build interesting apps.</p>
+                                <p className="des-para">- Graduated at The University of Toronto Scarborough.</p>
+                                <p className="des-para">- A software developer, and always want to build interesting apps.</p>
                                 {/* <div className="des-para">Welcome to download my resume. </div> */}
                             </div>
                         ) : (
                             <div className="des">
-                            <div className="des-para">A fourth year student at The University of Toronto Scarborough.</div>
-                            <div className="des-para">I am a developer, and always want to build interesting apps.</div>
+                            <div className="des-para">Graduated at The University of Toronto Scarborough.</div>
+                            <div className="des-para">A software developer, and always want to build interesting apps.</div>
                             {/* <div className="des-para">Welcome to download my resume. </div> */}
                         </div>
                         )}

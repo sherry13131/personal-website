@@ -6,6 +6,9 @@ import Tippy, {followCursor} from 'tippy.js';
 import 'react-tippy/dist/tippy.css';
 import 'tippy.js/animations/scale-subtle.css';
 import '../styles/underline.css';
+// import ScrollAnimation from 'react-animate-on-scroll';
+// import "animate.css/animate.min.css";
+
 import {
     isMobile
   } from "react-device-detect";
@@ -147,6 +150,7 @@ class Projects extends Component {
                      on titles for some cool screenshots! Click on titles will take you to code homepage.</p>
                     <div className="project-box">
                         <div className="pcol pleft">
+                            {/* <ScrollAnimation animateOnce="animate__fadeInDown"> */}
                             <div>
                                 <h2 className="ph2"><a id="catch-em" className="project-btn custom-underline" target="_blank" rel="noopener noreferrer" href="https://github.com/sherry13131/CatchEm">CatchEm* web app</a></h2>
                                 <h4 className="tech">Technologies: React Framework, MongoDB</h4>
@@ -154,6 +158,7 @@ class Projects extends Component {
                                 <p>- Having real-time battling between your friends</p>
                                 <p>- Has a Weather-based Pokémon encounters on map</p>
                             </div>
+                            {/* </ScrollAnimation> */}
                             <div>
                                 <h2 className="ph2"><a className="project-btn custom-underline" id="mediacat" target="_blank" rel="noopener noreferrer" href="https://github.com/UTMediaCAT/Voyage/tree/master-conversion">MediaCAT</a></h2>
                                 <h4 className="tech">Technologies: Django Framework, Python</h4>
