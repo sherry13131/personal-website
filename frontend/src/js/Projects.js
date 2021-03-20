@@ -176,11 +176,11 @@ class Projects extends Component {
                         </div>
                         <div className="pcol pright">
                             <div>
-                                <h2 className="ph2"><div className="project-btn custom-underline" id="pokebot">Pokemon Discord Bot</div></h2>
+                                <h2 className="ph2"><div className="project-btn custom-underline" id="pokebot">Discord Bot</div></h2>
                                 <h4 className="tech">Technologies: Discord.js</h4>
-                                <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
-                                <p>- It is growing and currently has more than 120000 users and is used in more than 45000 servers. It is one of the top 10 bot on Discord.</p>
-                                <p>- Implemented functionalities and interface design for catch, hunt, inventory, shop, and several other commands</p>
+                                <p>- A Discord game bot which allows users do catching, trading Pokemon and battling with friends</p>
+                                <p>- Responsible for backend improvement and database administration.</p>
+                                <p>- Involved and attemped to solve rate limit issue when there were too many requests from players</p>
                             </div>
                             <div>
                                 <h2 className="ph2"><a className="project-btn custom-underline" id="barcode" target="_blank" rel="noopener noreferrer" href="https://github.com/sherry13131/Products-organizing-app">Product organizing App</a></h2>
