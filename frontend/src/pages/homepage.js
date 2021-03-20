@@ -27,7 +27,7 @@ export class _HomePage extends Component {
         super(props);
         this.myAbout = React.createRef();
         this.myHome = React.createRef();
-        this.myProject = React.createRef();
+        // this.myProject = React.createRef();
         this.myContact = React.createRef();
         
         this.state = {
@@ -87,12 +87,12 @@ export class _HomePage extends Component {
                     <About></About>
                 </div>
             );
-        } else if (name === "project") {
-            return(
-                <div className="hp-project">
-                    <Projects></Projects>
-                </div>
-            );
+        // } else if (name === "project") {
+        //     return(
+        //         <div className="hp-project">
+        //             <Projects></Projects>
+        //         </div>
+        //     );
         } else if (name === "contact") {
             return(
                 <div className="hp-contact">
@@ -109,9 +109,9 @@ export class _HomePage extends Component {
         {
             name: "about"
         },
-        {
-            name: "project"
-        },
+        // {
+        //     name: "project"
+        // },
         {
             name: "contact"
         }

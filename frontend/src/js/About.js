@@ -46,14 +46,22 @@ class About extends Component {
                             </div>
                         </div>
                         <div className="skill-out">                        
-                            <p className="center-under">Technologies</p>
+                            <p className="center-under">Framework</p>
                             <div className="skills right">
+                                <div className="skill b">Java Spring</div>
+                                <div className="skill b">React.js</div>
+                                <div className="skill b">Django</div>
+                                <div className="skill b">Cosmos-SDK</div>
+                            </div>
+                        </div>
+                        <div className="skill-out">                        
+                            <p className="center-under">Technologies</p>
+                            <div className="skills left">
                                 <div className="skill b">Android Studio</div>
                                 <div className="skill b">Node.js</div>
-                                <div className="skill b">React.js</div>
                                 <div className="skill b">MySQL</div>
+                                <div className="skill b">MongoDB</div>
                                 <div className="skill b">Meteor.js</div>
-                                <div className="skill b">Cosmos-SDK</div>
                                 <div className="skill b">Google Cloud Platform</div>
                                 <div className="skill b">Photoshop</div>
                                 <div className="skill b">Illustrator</div>

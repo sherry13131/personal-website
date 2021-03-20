@@ -41,9 +41,9 @@ class Navbar extends Component {
                     <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
                     </li>
@@ -74,9 +74,9 @@ class Navbar extends Component {
                     <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("about")}>About</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("project")}>Projects</NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink exact to="/" activeClassName="activeNav" onClick={() => this.handleClick("contact")}>Contact</NavLink>
                     </li>
