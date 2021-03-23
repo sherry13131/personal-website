@@ -27,9 +27,9 @@ class Projects extends Component {
                         <div>
                             <h2><a className="project-btn" id="bank">Pokemon Discord Bot</a></h2>
                             <h4 className="tech=p">Technologies: Discord.js</h4>
-                            <p>- A Discord game bot which allows users do catching and trading Pokemon with friends</p>
-                            <p>- It is growing and currently has more than 120000 users and is used in more than 45000 servers. It is one of the top 10 bot on Discord.</p>
-                            <p>- Implemented functionalities and interface design for catch, hunt, inventory, shop, and several other commands</p>
+                            <p>- A Discord game bot which allows users do catching, trading Pokemon and battling with friends</p>
+                            <p>- Responsible for backend improvement and database administration.</p>
+                            <p>- Involved and attemped to solve rate limit issue when there were too many requests from players</p>
                         </div>
                         <div>
                             <h2><a id="catch-em" className="project-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/sherry13131/CatchEm">CatchEm* web app</a></h2>
